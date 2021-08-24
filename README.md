@@ -16,4 +16,8 @@ Download images using [Pexels](https://www.pexels.com/) API and create train and
 
   3. Run command in _linux_ console:
 
-    python build_dataset.py
+    python build_dataset.py -s [search terms]
+    
+    * [search terms] can be any number of terms. (ex. python build_dataset.py -s cats dogs)
+   
+   
