@@ -1,0 +1,56 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+
+	"settings": {
+		"python.pythonPath": "/home/brisa/anaconda3/envs/multi/bin/python",														
+		
+		"terminal.integrated.inheritEnv": true,
+		
+		"workbench.colorTheme": "Darcula Pycharm with Dark GUI",
+		
+		
+		"files.autoSave": "onFocusChange",
+		"editor.wordWrap": "wordWrapColumn",
+		"diffEditor.wordWrap": "inherit",
+		"editor.wordWrapColumn": 400,
+		"editor.foldingStrategy": "auto",
+		"window.zoomLevel": 0,
+
+
+		
+
+		"editor.matchBrackets":"never",
+		
+		"bracket-pair-colorizer-2.forceUniqueOpeningColor":true,
+		"bracket-pair-colorizer-2.forceIterationColorCycle":true,
+		"bracket-pair-colorizer-2.colorMode":"Consecutive",
+		"bracket-pair-colorizer-2.activeScopeCSS":[
+			"borderStyle : solid",
+			"borderWidth : 1px",
+			"borderColor : {color}",
+			"backgroundColor : {color}", 
+			"opacity: 0.25",
+		],
+		"bracket-pair-colorizer-2.highlightActiveScope":true,
+		"bracket-pair-colorizer-2.showBracketsInGutter":true,
+
+		"bracket-pair-colorizer-2.colors": [
+			// "Gold",
+			// "Orchid",
+			// "LightSkyBlue",
+			// "BurlyWood",
+			"CadetBlue",
+			"DarkSeaGreen",
+			"Plum",
+			"Peru",
+			// "",
+
+		],
+
+
+	}
+}
