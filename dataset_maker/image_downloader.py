@@ -40,7 +40,7 @@ def download_from_url_list(url_list: List, query: str, path: str, nr_imgs: int=9
             tqprint(str(e))
 
 
-def retrieve_images(API_KEY: str ,querys_list: List[str]):
+def retrieve_images(API_KEY: str ,querys_list: List[str], nr_imgs: int = 100):
     for name in querys_list:
 
         query = name.replace(' ','_').lower()
@@ -57,7 +57,7 @@ def retrieve_images(API_KEY: str ,querys_list: List[str]):
 
             # Save image urls
             with open(path+'urls.json', 'w') as f:
-                json.dump(urls, f)
+                json.dump(urls, f, indent=2)
         else:
             with open(path+'urls.json', 'r') as f:
                 urls = json.load(f)
@@ -65,7 +65,7 @@ def retrieve_images(API_KEY: str ,querys_list: List[str]):
         tqprint(f'Number of images urls available for "{query}": {len(urls)}')
 
         # Download from images urls
-        download_from_url_list(urls, query, path, nr_imgs=100)
+        download_from_url_list(urls, query, path, nr_imgs=nr_imgs)
 
 
 # querys_list = ['cats', 'dogs']

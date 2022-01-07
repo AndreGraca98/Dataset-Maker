@@ -6,11 +6,13 @@ from dataset_maker.list_maker import make_list, create_new_subjects_train_val_li
 def get_args():
     parser = argparse.ArgumentParser('Dataset maker')
     parser.add_argument('-s','--search_items',nargs='*', type=str, required=True, help='Search items')
+    parser.add_argument('-n','--image_nr', type=int, help='Number of images per item to download')
     args = parser.parse_args()
     print('Search items:', args.search_items)
+    print('Number of images per item:', args.image_nr)
     return args
 
-def main(args):
+def main():
     args = get_args()
 
     if os.path.exists('api_key_pexels.json'):    
@@ -22,8 +24,12 @@ def main(args):
 
     # Download images
     querys_list = args.search_items # search terms
+    nr_imgs = args.image_nr
     # querys_list = ['cats','dogs']  # search terms
-    retrieve_images(API_KEY ,querys_list)
+    if nr_imgs is not None:
+        retrieve_images(API_KEY ,querys_list, nr_imgs=nr_imgs)
+    else:
+        retrieve_images(API_KEY ,querys_list)
 
 
 
