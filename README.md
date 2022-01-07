@@ -4,7 +4,7 @@ Download images using [Pexels](https://www.pexels.com/) [API](https://www.pexels
 
 ## Requirements
 
-* Your own Pexels api key
+* Your own Pexels api key (you can get your own from this [link](https://www.pexels.com/pt-br/api/))
 
 ## How to use
 
